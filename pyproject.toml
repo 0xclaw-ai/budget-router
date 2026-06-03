@@ -1,0 +1,23 @@
+[project]
+name = "oxclaw-budgetrouter"
+version = "0.1.0"
+description = "BudgetRouter control-token runtime for 0xClaw-style hackathon agents"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [
+    {name = "0xClaw Team"}
+]
+dependencies = [
+    "torch>=2.11.0",
+    "transformers>=5.8.0",
+    "peft>=0.19.1",
+    "accelerate>=1.13.0",
+    "safetensors>=0.7.0",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["orchestration"]
