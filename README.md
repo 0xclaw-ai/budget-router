@@ -1,4 +1,4 @@
-# 0xClaw Budget Router 📊
+# 🦀 0xClaw Budget Router 📊
 
 BudgetRouter predicts compact control tokens for a hackathon-agent phase:
 
