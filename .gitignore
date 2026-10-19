@@ -1,0 +1,33 @@
+# Local credentials and machine-specific settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# Generated data, weights, logs, and caches
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+*.egg-info/
+models/
+checkpoints/
+data/
+outputs/
+outputs_*/
+runs/
+logs/
+work/
+workspace/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.zip
+*.jsonl
+*.jsonl.idx*
+config/*.local.yaml

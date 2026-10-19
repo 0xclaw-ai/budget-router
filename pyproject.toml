@@ -2,6 +2,7 @@
 name = "oxclaw-budgetrouter"
 version = "0.1.0"
 description = "BudgetRouter control-token runtime for 0xClaw-style hackathon agents"
+readme = "README.md"
 requires-python = ">=3.11"
 license = {text = "MIT"}
 authors = [
@@ -20,4 +21,12 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
-packages = ["orchestration"]
+packages = ["budget_router"]
+
+[project.entry-points."oxclaw.phase_controls"]
+budget-router = "budget_router.integration:BudgetRouterPlugin"
+
+[project.urls]
+Repository = "https://github.com/0xclaw-ai/budget-router"
+Training = "https://github.com/0xclaw-ai/budget-router-trainer"
+Model = "https://huggingface.co/0xclaw-ai/budgetrouter-qwen3.5-2b-lora"

@@ -10,7 +10,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from typing import Any, Iterator
 
-from orchestration.model_profiles import ModelProfile
+from .model_profiles import ModelProfile
 
 
 CONTROL_RE = re.compile(
